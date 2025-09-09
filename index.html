@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Acosta | Data Science</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+ <link rel="stylesheet" href="./css/styles.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="./js/particles.js"></script>
+<script src="./js/main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+ 	           <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#intro">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+<section id="hero">
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    
+    <!-- Contenido encima de las partículas -->
+    <div class="hero-content">
+        <h1>Hello, I'm Alex</h1>
+        <p class="subtitle">
+            Turn data into <span style="color: var(--primary-blue);">clean</span>, 
+            <span style="color: var(--accent-orange);">interactive</span>, 
+            <span style="color: var(--secondary-blue);">beautiful</span> digital experiences
+        </p>
+        <p class="intro-text">
+            This is a letter to introduce me and what I create. I'm a Data scientist, specializing in Data Visualization and Machine Learning.
+        </p>
+        <a href="#portfolio" class="cta-button">Portafolio →</a>
+    </div>
+</section>
+
+    <section id="intro">
+        <h2>A Letter of Introduction</h2>
+        <div class="intro-content">
+            <p>Hello there! I'm Alex, and this feels like the beginning of a conversation we should have had years ago. I'm a Mexican Data scientist With over 4 years of experience transforming complex data into visual narratives that drive strategic decisions.</p>
+            
+            <p>Over the past four years, I've had the privilege of working with startups that became household names, non-profits changing lives, and individuals with stories worth telling. What drives me isn't just the pixels or the code—it's the moment when someone sees their vision come to life and realizes it's exactly what they dreamed of, only better.</p>
+            
+            <p>This portfolio is my way of showing you not just what I've made, but how I think. Because at the end of the day, you're not just hiring someone to create graphics —you're partnering with someone who help you to tell a history with data.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section-alt">
+        <div class="content">
+            <h2>How I Can Help</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">📊</span>
+                    <h3>Data Visualization</h3>
+                    <p>Transform complex data into clear, compelling visual stories. I create interactive dashboards and visualizations that help you understand your data and communicate insights effectively.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🦾</span>
+                    <h3>Machine Learning</h3>
+                    <p>Develop predictive models and intelligent systems that drive business decisions. From recommendation systems to predictive analytics, I help you leverage the power of AI.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">💻</span>
+                    <h3>Data Science Consulting</h3>
+                    <p>End-to-end data science solutions from strategy to implementation. I help identify opportunities, clean and analyze data, and build scalable data-driven products.</p>	
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🤖</span>
+                    <h3> AI Automation low-code/no-code </h3>
+                    <p>Design and implement custom workflows using n8n to automate business processes, integrate apps, and connect data sources. Empower your operations with scalable, smart automations.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <h3 class="portfolio-subtitle">A glimpse of the projects I've been working on</h3>
+        
+        <!-- Portfolio Filter Buttons -->
+        <div class="portfolio-filter-container">
+            <button class="portfolio-filter-btn active" data-filter="all">Show all</button>
+            <button class="portfolio-filter-btn" data-filter="dataviz">Data Visualization</button>
+            <button class="portfolio-filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="portfolio-filter-btn" data-filter="AI">AI Automation</button>
+            <button class="portfolio-filter-btn" data-filter="dashboard">Dashboard</button>
+            <button class="portfolio-filter-btn" data-filter="analysis">Data Analysis</button>
+            <button class="portfolio-filter-btn" data-filter="web">Web Development</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-items">
+            <!-- Data Visualization Projects -->
+          
+<div class="project-card show ml analysis" data-project="inegi-deep-learning">
+    <div class="project-hover">
+        <div class="project-hover-content">
+            <p>Deep Learning & Statistical Coding</p>
+            <hr>
+            <p class="project-description">Design and evaluation of AI algorithms in coding tasks of the National Household Income and Expenditure Survey (ENIGH) for two variables: Occupation and Economic Activity</p>
+        </div>
+    </div>
+    <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+        <img src="images/inegi-deep-learning.png" height="100%" width="100%" alt="inegi-deep-learning">
+    </div>
+    <div class="project-content">
+        <h3>Deep Learning for Survey Coding Automation</h3>
+        <p>AI-powered intermediate stage for INEGI's ENIGH survey coding with confidence-based selection achieving 50% manual coding reduction while maintaining 83%+ quality standards</p>
+        <span class="project-tag">Deep Learning</span>
+        <span class="project-tag">FastText</span>
+        <span class="project-tag">Bidirectional GRU</span>
+        <span class="project-tag">TensorFlow</span>
+        <span class="project-tag">R Shiny</span>
+        <span class="project-tag">NLP</span>
+        <span class="project-tag">Statistical Analysis</span>
+    </div>
+</div>
+
+            <div class="project-card show ml" data-project="BigData-Medios">
+                <div class="project-hover">
+                    <div class="project-hover-content">
+                        <p>Text Mining & NLP</p>
+                        <hr>
+                        <p class="project-description">Digital media analytics platform with text mining and sentiment analysis that processes thousands of news stories in real time.</p>
+                    </div>
+                </div>
+                <div class="project-image" style="background: linear-gradient(135deg, var(--accent-coral), var(--accent-orange));"><img src="images/Logo BDM alt.png" alt="BDM_logo" height="40%" width="80%"></div>
+                <div class="project-content">
+                   <h3>BigData Medios</h3>
+                    <p>Real-time text mining and sentiment analysis for digital media monitoring</p>
+                    <span class="project-tag">R Shiny</span>
+                    <span class="project-tag">MySQL</span>
+                    <span class="project-tag">Text Mining</span>
+                    <span class="project-tag">Docker</span>
+                    <span class="project-tag">AWS/GCP</span>
+                    <span class="project-tag">API</span>
+                    <span class="project-tag">JS</span>
+                </div>
+            </div>
+
+
+<div class="project-card show analysis dashboard dataviz" data-project="INEGI-Labor-Market">
+    <div class="project-hover">
+        <div class="project-hover-content">
+            <p>Statistical Analysis & Data Visualization</p>
+            <hr>
+            <p class="project-description">Comprehensive analysis of the Mexican labor market using ENOE survey data, featuring interactive dashboards for employment patterns, education-occupation relationships, and income analysis.</p>
+        </div>
+    </div>
+    <div class="project-image" style="background: linear-gradient(135deg, #005395, #0B5D37);"><img src="images/INEGI.png" height="90%" width="50%" alt="INEGI infographic showing Mexican labor market statistics with charts and graphs in a professional and informative style. The environment is clean and data-focused, conveying clarity and reliability."></div>
+    <div class="project-content">
+       <h3>INEGI Labor Market Analysis</h3>
+        <p>Interactive statistical analysis platform for Mexican employment data with advanced visualizations</p>
+        <span class="project-tag">R Shiny</span>
+        <span class="project-tag">Statistical Analysis</span>
+        <span class="project-tag">Data Visualization</span>
+        <span class="project-tag">ENOE Survey</span>
+        <span class="project-tag">Labor Economics</span>
+    </div>
+</div>
+
+<div class="project-card show viz web dashboard analysis" data-project="spotify-dashboard">
+    <div class="project-hover">
+        <div class="project-hover-content">
+            <p>Data Visualization & Music Analytics</p>
+            <hr>
+            <p class="project-description">Interactive personal music analytics platform that transforms Spotify listening history into compelling visual narratives and insights.</p>
+        </div>
+    </div>
+    <div class="project-image" style="background: linear-gradient(135deg, #1DB954, #1ed760);"><img src="images/spotify_icon-icons.com_65503.png" alt="spotify_logo" height="40%" width="40%">
+    </div>
+    <div class="project-content">
+        <h3>Spotify Story Dashboard</h3>
+        <p>Use your Spotify data to create amazing interactive visualizations and discover your musical DNA</p>
+        <span class="project-tag">Python</span>
+        <span class="project-tag">Streamlit</span>
+        <span class="project-tag">Plotly</span>
+        <span class="project-tag">Pandas</span>
+        <span class="project-tag">Data Viz</span>
+        <span class="project-tag">Analytics</span>
+        <span class="project-tag">NumPy</span>
+    </div>
+</div>
+
+<div class="project-card show analysis dashboard dataviz" data-project="Survey-Operational-Monitoring">
+    <div class="project-hover">
+        <div class="project-hover-content">
+            <p>Data Monitoring & Validation</p>
+            <hr>
+            <p class="project-description">
+                Interactive R Shiny platform for real-time survey operational monitoring, 
+                with geographic validation, quality control, and preliminary results statistical analysis.
+            </p>
+        </div>
+    </div>
+    <div class="project-image" style="background: linear-gradient(135deg, #2D2E82, #94C31D);">
+        <img src="images/monitoreo_portada.png" height="100%" width="100%" alt="Shiny dashboard for operational survey monitoring showing maps, quality metrics, and control charts in a professional and data-focused design.">
+    </div>
+    <div class="project-content">
+        <h3>Survey Operational Monitoring</h3>
+        <p>Real-time dashboard for survey monitoring and control with mapping and data quality analytics.</p>
+        <span class="project-tag">R Shiny</span>
+        <span class="project-tag">Real-Time Monitoring</span>
+        <span class="project-tag">Data Validation</span>
+        <span class="project-tag">Leaflet</span>
+        <span class="project-tag">Survey Analytics</span>
+    </div>
+</div>
+
+
+<div class="project-card show ml AI" data-project="news-sentiment-topic-ML">
+    <div class="project-hover">
+        <div class="project-hover-content">
+            <p>NLP & Machine Learning</p>
+            <hr>
+            <p class="project-description">Sistema completo de análisis de noticias que combina modelos de transformers para clasificación de sentimiento y temas utilizando técnicas de fine-tuning y modelos preentrenados de Hugging Face.</p>
+        </div>
+    </div>
+    <div class="project-image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+       <img src="images/news-sentiment-topic-ML.png" height="100%" width="100%" alt="news-sentiment-topic-ML">
+    </div>
+    <div class="project-content">
+        <h3>News Sentiment & Topic Analysis</h3>
+        <p>Advanced NLP system with custom fine-tuning achieving 88.5% accuracy in Spanish sentiment analysis and IPTC topic classification</p>
+        <span class="project-tag">Python</span>
+        <span class="project-tag">Transformers</span>
+        <span class="project-tag">BERT</span>
+        <span class="project-tag">PyTorch</span>
+        <span class="project-tag">Hugging Face</span>
+        <span class="project-tag">Fine-tuning</span>
+        <span class="project-tag">NLP</span>
+    </div>
+</div>
+
+<div class="project-card show ml AI" data-project="web-scraping-medios-mexicanos">
+    <div class="project-hover">
+        <div class="project-hover-content">
+            <p>Web Scraping & NLP Analysis</p>
+            <hr>
+            <p class="project-description">Sistema enterprise de monitoreo automático que procesa diariamente 20K+ artículos de 17+ medios mexicanos, combinando web scraping avanzado con análisis de sentimiento XLM-AlBERTex y clasificación temática IPTC.</p>
+        </div>
+    </div>
+    <div class="project-image" style="background: linear-gradient(135deg, #ff6b6b, #4ecdc4);">
+       <img src="images/web_scraping.png" height="100%" width="100%" alt="web-scraping-medios-mexicanos">
+    </div>
+    <div class="project-content">
+        <h3>Sistema de Monitoreo de Medios Nacionales</h3>
+        <p>Plataforma automatizada de web scraping y análisis de sentimiento para el monitoreo integral de medios mexicanos con procesamiento 24/7</p>
+        <span class="project-tag">R</span>
+        <span class="project-tag">RSelenium</span>
+        <span class="project-tag">MySQL</span>
+        <span class="project-tag">Rvest</span>
+        <span class="project-tag">Tidyverse</span>
+        <span class="project-tag">Web Scraping</span>
+    </div>
+</div>
+
+<div class="project-card show AI" data-project="extension-messenger-automation">
+    <div class="project-hover">
+        <div class="project-hover-content">
+            <p>Chrome Extension & Automation</p>
+            <hr>
+            <p class="project-description">Chrome extension that automates Facebook Marketplace conversations through webhook integration and smart message processing.</p>
+        </div>
+    </div>
+    <div class="project-image" style="background: linear-gradient(135deg, #0084ff, #00c6ff);">
+        <img src="images/messenger-icon.png" alt="messenger_logo" height="100%" width="100%">
+    </div>
+    <div class="project-content">
+        <h3>Messenger Webhook Automation</h3>
+        <p>Automate Facebook Marketplace responses with intelligent message processing and webhook integration</p>
+        <span class="project-tag">JavaScript</span>
+        <span class="project-tag">Chrome API</span>
+        <span class="project-tag">Webhooks</span>
+        <span class="project-tag">jQuery</span>
+        <span class="project-tag">DOM</span>
+        <span class="project-tag">REST API</span>
+    </div>
+</div>
+
+<div class="project-card show analysis dashboard dataviz" data-project="it-budget-dashboard">
+    <div class="project-hover">
+        <div class="project-hover-content">
+            <p>Power BI • Business Intelligence • Financial Analytics</p>
+            <hr>
+            <p class="project-description">Comprehensive Power BI solution for IT budget analysis, forecasting, and strategic financial planning with advanced data modeling across 15+ countries and multiple departments.</p>
+        </div>
+    </div>
+    <div class="project-image" style="background: linear-gradient(135deg, #004878, #004878, #004878);">
+        <img src="images/powerbi_icon.png" alt="powerbi_logo" height="100%" width="90%">
+    </div>
+    <div class="project-content">
+        <h3>IT Budget Analysis & Forecast Dashboard</h3>
+        <p>Advanced Power BI dashboard analyzing $3.18M budget variance across global operations with decomposition tree insights and geospatial intelligence</p>
+        <span class="project-tag">Power BI</span>
+        <span class="project-tag">DAX</span>
+        <span class="project-tag">Power Query</span>
+        <span class="project-tag">Data Modeling</span>
+        <span class="project-tag">Financial Analytics</span>
+        <span class="project-tag">Forecasting</span>
+        <span class="project-tag">Business Intelligence</span>
+    </div>
+</div>
+        </div>
+    </section>
+
+<section id="contact">
+  <h2>Let's Start a Conversation</h2>
+  <div class="contact-content">
+    <p>I believe the best projects start with a good conversation. Whether you have a clear vision or just a spark of an idea, I'd love to hear about what you're working on.</p>
+    <p>Let's discuss how we can bring your data to life.</p>
+    <div class="contact-links">
+      <a href="mailto:alejandroacosta.data@gmail.com" class="contact-link gmail">
+        <i class="fa-solid fa-envelope"></i> Send Email
+      </a>
+      <a href="https://github.com/alejandroacostadata" class="contact-link github" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a href="https://wa.me/5214493854882" class="contact-link whatsapp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.linkedin.com/in/alejandro-acosta-galvan-a26427183/" class="contact-link linkedin" target="_blank">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    const lightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true
+    });
+</script>
+</body>
+</html>
+    
