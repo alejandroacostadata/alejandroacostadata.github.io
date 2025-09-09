@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Budget Analysis & Forecast Dashboard - Alex Acosta Portfolio</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/main.js"></script>
+    <style>
+        .powerbi-theme {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e40af 100%);
+            color: white;
+        }
+        .data-model-container {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        .model-diagram {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .table-box {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .table-header {
+            font-weight: bold;
+            color: #1e40af;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .relationship-line {
+            border-top: 2px solid #64748b;
+            position: relative;
+            margin: 1rem 0;
+        }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .kpi-card {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #3b82f6;
+        }
+        .kpi-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #60a5fa;
+        }
+        .dashboard-preview {
+            margin: 3rem 0;
+        }
+        .dashboard-screenshot {
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .dashboard-screenshot:hover {
+            transform: scale(1.02);
+        }
+        .feature-highlight {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 4px solid #3b82f6;
+        }
+        .technical-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .tech-item {
+            background: #1e40af;
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+           <a href="index.html" class="nav-logo"><img src="images/logo.ico" alt="alex_logo" height="20%" width="20%"></a>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" class="back-btn">← Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero powerbi-theme">
+        <div class="project-hero-content">
+            <span class="category">Power BI • Business Intelligence • Financial Analytics</span>
+            <h1>IT Budget Analysis & Forecast Dashboard</h1>
+            <p class="subtitle">Comprehensive Power BI solution for IT budget analysis, forecasting, and strategic financial planning with advanced data modeling and interactive visualizations</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Project Overview</h2>
+        <p>The IT Budget Analysis and Forecast Dashboard is a sophisticated Power BI solution designed to provide comprehensive insights into IT budget allocation, spending patterns, and forecasting across multiple regions, departments, and cost elements. This project demonstrates advanced Power BI capabilities including complex data modeling, DAX calculations, and interactive dashboard design for executive-level financial reporting.</p>
+        
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-number">15+</div>
+                <div class="kpi-label">Countries Analyzed</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-number">6</div>
+                <div class="kpi-label">Data Tables Integrated</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-number">10+</div>
+                <div class="kpi-label">Interactive Visualizations</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-number">5</div>
+                <div class="kpi-label">Regional Dashboards</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Data Architecture & Modeling</h2>
+            <p>Implemented a robust star schema data model with six interconnected tables, ensuring optimal performance and accurate relationship mapping for complex financial analysis.</p>
+            
+            <div class="data-model-container">
+                <h3>Data Model Structure</h3>
+                <div class="model-diagram">
+                    <div class="table-box">
+                        <div class="table-header">CostElements</div>
+                        <div>Business Area</div>
+                        <div>Cost Element</div>
+                        <div>Cost Element Group</div>
+                    </div>
+                    
+                    <div class="table-box">
+                        <div class="table-header">Departments</div>
+                        <div>Dept Manager</div>
+                        <div>IT Area</div>
+                        <div>IT Department</div>
+                    </div>
+                    
+                    <div class="table-box">
+                        <div class="table-header">Regions</div>
+                        <div>Country</div>
+                        <div>Region</div>
+                    </div>
+                    
+                    <div class="table-box">
+                        <div class="table-header">Budget</div>
+                        <div>Budget Amount</div>
+                        <div>CostElement</div>
+                        <div>Country</div>
+                        <div>Date</div>
+                        <div>IT Dep</div>
+                        <div>Budget RT</div>
+                    </div>
+                    
+                    <div class="table-box">
+                        <div class="table-header">Actuals</div>
+                        <div>Actual Amount</div>
+                        <div>CostElement</div>
+                        <div>Country</div>
+                        <div>Date</div>
+                        <div>IT Dep</div>
+                        <div>Actual RT</div>
+                    </div>
+                    
+                    <div class="table-box">
+                        <div class="table-header">Forecast</div>
+                        <div>CostElement</div>
+                        <div>Country</div>
+                        <div>Date</div>
+                        <div>Forecast Amount</div>
+                        <div>IT Dep</div>
+                        <div>Forecast RT</div>
+                    </div>
+                </div>
+                
+                <div style="grid-column: 1 / -1;">
+                    <div class="table-box">
+                        <div class="table-header">Calendar</div>
+                        <div>Date (Primary Key)</div>
+                        <div>Year, Quarter, Month, Day</div>
+                        <div>Fiscal Period Calculations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Key Features & Capabilities</h2>
+        
+        <div class="feature-highlight">
+            <h3>🎯 Advanced Budget vs Forecast Analysis</h3>
+            <p>Interactive scatter plots and decomposition trees revealing budget variance patterns across countries, departments, and cost elements. The analysis identifies over/under budget scenarios with drill-down capabilities to root cause analysis.</p>
+        </div>
+
+        <div class="feature-highlight">
+            <h3>🌍 Geospatial Intelligence</h3>
+            <p>Interactive world maps with color-coded budget performance metrics, enabling regional analysis and identification of geographical spending patterns. Includes zoom functionality for detailed country-level analysis.</p>
+        </div>
+
+        <div class="feature-highlight">
+            <h3>📊 Dynamic Time Series Forecasting</h3>
+            <p>Running total calculations with actual vs forecast vs budget comparisons across multiple time periods. Includes trend analysis and seasonal pattern identification for strategic planning.</p>
+        </div>
+
+        <div class="feature-highlight">
+            <h3>🔍 Decomposition Tree Analytics</h3>
+            <p>AI-powered decomposition analysis breaking down budget variances by multiple dimensions simultaneously, revealing hidden patterns in IT spending across departments and regions.</p>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Dashboard Showcase</h2>
+            
+            <div class="dashboard-preview">
+                <h3>Main Dashboard - Executive Overview</h3>
+                <img src="images/power-bi-Analysis-Dash-IT-Budget-1.png" alt="Main IT Budget Dashboard"  style="width: 100%; margin-bottom: 2rem;">
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h4>Key Metrics Display</h4>
+                        <ul>
+                            <li>Real-time budget vs forecast variance tracking</li>
+                            <li>Regional performance comparison</li>
+                            <li>Department-wise budget allocation</li>
+                            <li>Cost element breakdown analysis</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Interactive Elements</h4>
+                        <ul>
+                            <li>Dynamic slicers for region and time period</li>
+                            <li>Cross-filtering across all visualizations</li>
+                            <li>Hover tooltips with detailed insights</li>
+                            <li>Drill-through capabilities to detailed views</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-preview">
+                <h3>Regional Analysis Dashboard</h3>
+                <img src="images/power-bi-Analysis-Dash-IT-Budget-2.png" alt="Regional Analysis Dashboard"  style="width: 100%; margin-bottom: 2rem;">
+                
+                <div class="feature-highlight">
+                    <h4>🗺️ Geographic Budget Distribution</h4>
+                    <p>Comprehensive regional analysis showing budget allocation across USA, Europe, Canada, Latin America, and Asia-Pacific regions. Matrix tables display detailed breakdowns by IT area and cost element group with color-coded performance indicators.</p>
+                </div>
+            </div>
+
+            <div class="dashboard-preview">
+                <h3>Decomposition Tree Analysis</h3>
+                <img src="images/power-bi-Analysis-Dash-IT-Budget-4.png" alt="Decomposition Tree Dashboard" style="width: 100%; margin-bottom: 2rem;">
+                <img src="images/power-bi-Analysis-Dash-IT-Budget-4.5.png" alt="Decomposition Tree Dashboard"  style="width: 100%; margin-bottom: 2rem;">
+                
+                <div class="feature-highlight">
+                    <h4>🌳 AI-Powered variance Analysis</h4>
+                    <p>Interactive decomposition tree vs forecast variance tracking  by Country → IT Department → Cost Element Group → Cost Element</p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://github.com/alejandroacostadata/Analysis-Dash-IT-Budget" class="cta-btn" style="display: inline-block; padding: 12px 24px; background-color: #1e40af; color: white; text-decoration: none; border-radius: 6px; font-weight: 600;">
+                    Download PBIX File →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Technical Implementation</h2>
+        
+        <div class="technical-stack">
+            <div class="tech-item">Power BI Desktop</div>
+            <div class="tech-item">Power Query</div>
+            <div class="tech-item">Data Modeling</div>
+            <div class="tech-item">Excel Integration</div>
+            <div class="tech-item">SQL Queries</div>
+        </div>
+
+        <h3>Key Technical Features</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1.5rem; background: #f1f5f9; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                <h4>Data Relationships</h4>
+                <p>Star schema with fact tables (Budget, Actuals, Forecast) connected to dimension tables (Regions, Departments, CostElements) through a central Calendar table.</p>
+            </div>
+            
+            <div style="padding: 1.5rem; background: #f1f5f9; border-radius: 8px; border-left: 4px solid #10b981;">
+                <h4>Performance Optimization</h4>
+                <p>Implemented calculated columns, measures, and aggregations to ensure fast dashboard loading with large datasets spanning multiple years and regions.</p>
+            </div>
+            
+            <div style="padding: 1.5rem; background: #f1f5f9; border-radius: 8px; border-left: 4px solid #f59e0b;">
+                <h4>Interactive Features</h4>
+                <p>Cross-filtering, drill-through actions, bookmarks, and dynamic titles that update based on user selections for enhanced user experience.</p>
+            </div>
+            
+            <div style="padding: 1.5rem; background: #f1f5f9; border-radius: 8px; border-left: 4px solid #ef4444;">
+                <h4>Natural Language Q&A</h4>
+                <p>Implemented Power BI Q&A feature allowing users to ask questions in natural language and receive instant visualizations and insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Business Impact & Results</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 2rem 0;">
+                <div>
+                    <h3>📈 Financial Insights Delivered</h3>
+                    <ul style="line-height: 1.8;">
+                        <li><strong>Budget variance</strong> identified and decomposed by contributing factors</li>
+                        <li><strong>15 countries</strong> analyzed with regional performance comparisons</li>
+                        <li><strong>Multi-dimensional analysis</strong> across departments, cost elements, and time periods</li>
+                        <li><strong>Forecast accuracy tracking</strong> enabling better future budget planning</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3>🎯 Executive Decision Support</h3>
+                    <ul style="line-height: 1.8;">
+                        <li><strong>Real-time monitoring</strong> of budget performance across global operations</li>
+                        <li><strong>Drill-down capabilities</strong> from high-level KPIs to granular details</li>
+                        <li><strong>Automated reporting</strong> reducing manual analysis time by 80%</li>
+                        <li><strong>Data-driven insights</strong> for strategic IT investment decisions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-highlight">
+                <h3>🎯 Key Performance Insights Generated</h3>
+                <div style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); padding: 2rem; border-radius: 12px; color: white; margin-top: 1.5rem;">
+                    <ul style="line-height: 1.8; list-style: none; padding: 0;">
+                        <li>🇺🇸 <strong>Country leads budget variance</strong> Primarily in Networking department</li>
+                        <li>🌍 <strong>Regional distribution:</strong> USA (40.8%), Europe (29.4%), Canada (20.6%), Others (9.2%)</li>
+                        <li>💰 <strong>Cost optimization opportunities</strong> identified in Telecom and Hardware & Software categories</li>
+                        <li>📊 <strong>Seasonal patterns</strong> revealed through quarterly trend analysis and YTD tracking</li>
+                        <li>🎯 <strong>Department efficiency</strong> metrics showing Infrastructure as highest budget consumer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize GLightbox for image gallery
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add loading animation for dashboard screenshots
+        document.querySelectorAll('.dashboard-screenshot').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+                this.style.transform = 'translateY(0)';
+            });
+            img.style.opacity = '0';
+            img.style.transform = 'translateY(20px)';
+            img.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        });
+    </script>
+</body>
+</html>

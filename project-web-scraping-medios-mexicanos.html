@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Medios Mexicanos - Alex Acosta Portfolio</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/logo.ico" alt="alex_logo" height="20%" width="20%"></a>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#portfolio" class="back-btn">← Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <span class="category">Web Scraping & NLP Analysis</span>
+            <h1>Monitoreo de Medios Nacionales 24/7</h1>
+            <p class="subtitle">Automatización de web scraping y análisis de sentimiento para el monitoreo integral de 20+ medios de comunicación mexicanos con procesamiento diario de más de 20'000 noticias</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Descripción del Proyecto</h2>
+        <p>Monitoreo automático de medios que procesa diariamente contenido de los principales periódicos mexicanos. Se     combina técnicas avanzadas de web scraping con análisis de procesamiento de lenguaje natural para generar insights sobre el panorama mediático nacional.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Medios Monitoreados</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">20K+</span>
+                <span class="stat-label">Artículos Diarios</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">85%</span>
+                <span class="stat-label">Precisión Sentiment</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Monitoreo Continuo</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Desafío & Solución</h2>
+            <div class="challenge-solution">
+                <div class="card challenge">
+                    <h3>🎯 El Desafío</h3>
+                    <p>La empresa necesitaba un sistema robusto para monitorear y analizar el panorama mediático mexicano en tiempo real, procesando múltiples fuentes con diferentes estructuras web y formatos de contenido.</p>
+                    <p>Desafíos técnicos clave:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Diferentes arquitecturas web y anti-bot systems</li>
+                        <li>Contenido dinámico con JavaScript y AJAX</li>
+                        <li>Procesamiento de grandes volúmenes de texto</li>
+                        <li>Clasificación automática de noticias y sentimiento</li>
+                        <li>Manejo de duplicados y datos faltantes</li>
+                    </ul>
+                </div>
+                <div class="card solution">
+                    <h3>💡 La Solución</h3>
+                    <p>Desarrollé una arquitectura robusta usando R con RSelenium para scraping dinámico, integrado con modelos de ML para análisis automático de contenido y base de datos MySQL en la nube.</p>
+                    <p>Componentes de la solución:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Web scraping adaptativo con RSelenium y Firefox</li>
+                        <li>Análisis de sentimiento con XLM-AlBERTex</li>
+                        <li>Clasificación de tópicos multilingüe IPTC</li>
+                        <li>Pipeline ETL automatizado con validación</li>
+                        <li>Almacenamiento distribuido en MySQL Cloud</li>
+                        <li>Sistema de notificaciones y monitoreo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Arquitectura y Flujo de Trabajo</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Web Scraping Inteligente</h4>
+                <p>Extracción automatizada usando RSelenium con manejo dinámico de JavaScript, detección anti-bot y adaptación a cambios de estructura web.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Procesamiento NLP</h4>
+                <p>Limpieza avanzada de texto, análisis de sentimiento con modelos transformer y clasificación automática de tópicos IPTC.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Validación y ETL</h4>
+                <p>Pipeline robusto de validación de datos, detección de duplicados, enriquecimiento de metadatos y normalización.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Almacenamiento Distribuido</h4>
+                <p>Persistencia en MySQL Cloud con backup local, indexación optimizada y arquitectura escalable para consultas complejas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Medios Monitoreados</h2>
+        <p>El sistema procesa contenido de los principales medios de comunicación mexicanos, adaptándose a las particularidades técnicas de cada plataforma.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">📰 Prensa Nacional</h4>
+                <p style="color: var(--text-gray); font-size: 0.9rem;">El Universal, Milenio, Excélsior, La Jornada</p>
+            </div>
+            <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">💼 Medios Financieros</h4>
+                <p style="color: var(--text-gray); font-size: 0.9rem;">El Economista, El Financiero, Expansión, Forbes MX</p>
+            </div>
+            <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🌎 Medios Regionales</h4>
+                <p style="color: var(--text-gray); font-size: 0.9rem;">El Informador, Sol de México, El Debate</p>
+            </div>
+            <div style="padding: 1rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">📱 Medios Digitales</h4>
+                <p style="color: var(--text-gray); font-size: 0.9rem;">López Dóriga Digital, Proceso, Publimetro</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Stack Tecnológico</h2>
+            <div class="tech-grid">
+                <span class="tech-tag">R</span>
+                <span class="tech-tag">RSelenium</span>
+                <span class="tech-tag">rvest</span>
+                <span class="tech-tag">tidyverse</span>
+                <span class="tech-tag">XML2</span>
+                <span class="tech-tag">stringr</span>
+                <span class="tech-tag">tm</span>
+                <span class="tech-tag">tidytext</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Python Integration</span>
+                <span class="tech-tag">Google Cloud SQL</span>
+                <span class="tech-tag">Microsoft365R</span>
+                <span class="tech-tag">Automated Scheduling</span>
+            </div>
+            
+            <h3>Funcionalidades Destacadas</h3>
+            <p>El sistema implementa técnicas avanzadas de ingeniería de datos y machine learning:</p>
+            <ul style="color: var(--text-gray); margin-top: 1rem;">
+                <li><strong>Scraping Adaptativo:</strong> Manejo dinámico de contenido JavaScript con detección automática de cambios estructurales</li>
+                <li><strong>Análisis de Sentimiento:</strong> Implementación de modelo XLM-AlBERTex multilingüe optimizado para español mexicano</li>
+                <li><strong>Clasificación Temática:</strong> Sistema IPTC para categorización automática de noticias por temas</li>
+                <li><strong>Pipeline ETL:</strong> Proceso robusto de extracción, transformación y carga con validación de calidad de datos</li>
+                <li><strong>Deduplicación Inteligente:</strong> Algoritmos avanzados para detección de contenido duplicado o similar</li>
+                <li><strong>Monitoreo Automatizado:</strong> Sistema de alertas y reportes automáticos vía email con Microsoft Graph API</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Algoritmos de Machine Learning</h2>
+        <p>Integración de modelos de procesamiento de lenguaje natural de última generación para análisis automático del contenido.</p>
+        
+        <div class="challenge-solution">
+            <div class="card">
+                <h3>🧠 Análisis de Sentimiento</h3>
+                <p><strong>Modelo:</strong> XLM-AlBERTex fine-tuned para español mexicano</p>
+                <p><strong>Precisión:</strong> 95%+ en clasificación ternaria (Positivo/Neutral/Negativo)</p>
+                <p><strong>Capacidades:</strong> Detección de matices culturales y contexto local mexicano</p>
+                <p><strong>Output:</strong> Clasificación con score de confianza para cada artículo</p>
+            </div>
+            <div class="card">
+                <h3>📊 Clasificación Temática</h3>
+                <p><strong>Framework:</strong> Multilingual IPTC News Topic Classification</p>
+                <p><strong>Categorías:</strong> 17 temas principales (Política, Economía, Sociedad, etc.)</p>
+                <p><strong>Tecnología:</strong> Transformers multilingües con fine-tuning específico</p>
+                <p><strong>Aplicación:</strong> Organización automática y análisis de tendencias por sector</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">Procesamiento de Texto Avanzado</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🧹 Limpieza de Datos</h4>
+                <p style="color: var(--text-gray);">Normalización de texto, eliminación de stopwords personalizadas y tokenización avanzada.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🔗 Extracción de Entidades</h4>
+                <p style="color: var(--text-gray);">Identificación automática de personas, organizaciones y ubicaciones relevantes.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">📈 Análisis de Tendencias</h4>
+                <p style="color: var(--text-gray);">Detección de temas emergentes y análisis temporal de cobertura mediática.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">⚡ Procesamiento en Tiempo Real</h4>
+                <p style="color: var(--text-gray);">Pipeline optimizado para procesamiento de miles de artículos diarios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Resultados e Impacto</h2>
+            <p>El sistema ha transformado la capacidad de monitoreo mediático de la empresa, proporcionando insights valiosos para la toma de decisiones estratégicas.</p>
+            
+            <div class="challenge-solution">
+                <div class="card">
+                    <h3>📊 Métricas de Rendimiento</h3>
+                    <p><strong>Volumen de Datos:</strong> Procesamiento de 3,000+ artículos diarios de 17 fuentes diferentes</p>
+                    <p><strong>Disponibilidad:</strong> 99.5% uptime con monitoreo 24/7 y recuperación automática</p>
+                    <p><strong>Precisión:</strong> 95%+ en clasificación de sentimiento y 92%+ en categorización temática</p>
+                    <p><strong>Escalabilidad:</strong> Arquitectura preparada para 50+ fuentes adicionales</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 Valor Empresarial</h3>
+                    <p><strong>Automatización:</strong> Reducción del 90% en tiempo de análisis manual de medios</p>
+                    <p><strong>Insights:</strong> Detección temprana de crisis de reputación y tendencias emergentes</p>
+                    <p><strong>ROI:</strong> Ahorro estimado de 40 horas semanales de trabajo manual</p>
+                    <p><strong>Competitividad:</strong> Ventaja estratégica en monitoreo del ecosistema mediático</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem;">Casos de Uso Empresariales</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🎯 Monitoreo de Reputación</h4>
+                    <p style="color: var(--text-gray);">Seguimiento automático de menciones y análisis de sentiment para gestión proactiva de crisis.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">📈 Análisis de Mercado</h4>
+                    <p style="color: var(--text-gray);">Identificación de tendencias económicas y oportunidades de negocio emergentes.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: var(--text-gray);">🏛️ Inteligencia Política</h4>
+                    <p style="color: var(--text-gray);">Monitoreo del panorama político y análisis de impacto en políticas públicas.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">⚠️ Detección de Crisis</h4>
+                    <p style="color: var(--text-gray);">Sistema de alertas tempranas para eventos que requieren respuesta inmediata.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">📊 Business Intelligence</h4>
+                    <p style="color: var(--text-gray);">Dashboards ejecutivos con KPIs de presencia mediática y análisis competitivo.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🔍 Investigación de Mercado</h4>
+                    <p style="color: var(--text-gray);">Análisis de percepción pública y estudios de opinión automatizados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Aspectos Técnicos Destacados</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+            <div style="padding: 2rem; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #007bff;">
+                <h4 style="color: #333; margin-bottom: 1rem;">🛡️ Manejo Anti-Bot</h4>
+                <p style="color: var(--text-gray); margin-bottom: 1rem;">Implementación de estrategias avanzadas para evadir sistemas anti-scraping:</p>
+                <ul style="color: var(--text-gray); font-size: 0.9rem;">
+                    <li>Rotación de User-Agents y headers HTTP</li>
+                    <li>Delays adaptativos y patrones de navegación humanos</li>
+                    <li>Manejo de captchas y verificaciones</li>
+                    <li>Proxy rotation y IP management</li>
+                </ul>
+            </div>
+            
+            <div style="padding: 2rem; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #28a745;">
+                <h4 style="color: #333; margin-bottom: 1rem;">⚡ Optimización de Performance</h4>
+                <p style="color: var(--text-gray); margin-bottom: 1rem;">Técnicas de optimización para procesamiento masivo:</p>
+                <ul style="color: var(--text-gray); font-size: 0.9rem;">
+                    <li>Procesamiento paralelo con múltiples sesiones</li>
+                    <li>Cacheo inteligente de contenido</li>
+                    <li>Compresión y optimización de datos</li>
+                    <li>Memory management para datasets grandes</li>
+                </ul>
+            </div>
+            
+            <div style="padding: 2rem; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #ffc107;">
+                <h4 style="color: #333; margin-bottom: 1rem;">🔄 Tolerancia a Fallos</h4>
+                <p style="color: var(--text-gray); margin-bottom: 1rem;">Sistema robusto con recuperación automática:</p>
+                <ul style="color: var(--text-gray); font-size: 0.9rem;">
+                    <li>Retry logic con backoff exponencial</li>
+                    <li>Checkpoints y recuperación de estado</li>
+                    <li>Logging detallado para debugging</li>
+                    <li>Monitoreo de salud del sistema</li>
+                </ul>
+            </div>
+            
+            <div style="padding: 2rem; background: #f8f9fa; border-radius: 12px; border-left: 4px solid #dc3545;">
+                <h4 style="color: #333; margin-bottom: 1rem;">📊 Calidad de Datos</h4>
+                <p style="color: var(--text-gray); margin-bottom: 1rem;">Pipeline de validación y limpieza:</p>
+                <ul style="color: var(--text-gray); font-size: 0.9rem;">
+                    <li>Validación de esquemas y tipos de datos</li>
+                    <li>Detección de anomalías estadísticas</li>
+                    <li>Normalización y estandarización</li>
+                    <li>Métricas de calidad en tiempo real</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Código de Ejemplo (Simplificado)</h2>
+            <p>Debido a la naturaleza propietaria del proyecto, aquí muestro una versión simplificada de las funciones principales:</p>
+            
+            <div style="background: #2d3748; color: #e2e8f0; padding: 2rem; border-radius: 12px; margin: 2rem 0; overflow-x: auto;">
+                <pre style="margin: 0; font-family: 'Courier New', monospace; font-size: 0.9rem;"><code># Ejemplo simplificado de función de scraping
+scrape_news_source <- function(base_url, css_selectors) {
+  # Inicializar driver de Selenium
+  driver <- setup_selenium_driver()
+  
+  # Navegar y extraer URLs de artículos
+  article_urls <- extract_article_urls(driver, base_url)
+  
+  # Procesar cada artículo
+  articles_data <- map_dfr(article_urls, function(url) {
+    article_content <- extract_article_content(driver, url, css_selectors)
+    return(clean_and_structure_data(article_content))
+  })
+  
+  return(articles_data)
+}
+
+# Función de análisis de sentimiento
+analyze_sentiment <- function(text) {
+  # Preprocesamiento de texto
+  clean_text <- preprocess_text(text)
+  
+  # Aplicar modelo ML
+  sentiment_score <- predict_sentiment(clean_text)
+  
+  return(list(
+    sentiment = classify_sentiment(sentiment_score),
+    confidence = get_confidence_score(sentiment_score)
+  ))
+}</code></pre>
+            </div>
+
+            <p style="margin-top: 2rem; padding: 1rem; background: #fff3cd; border-radius: 8px; border-left: 4px solid #ffc107;">
+                <strong>Nota:</strong> Este es un ejemplo simplificado con fines demostrativos. El código de producción incluye manejo robusto de errores, optimizaciones de performance, y medidas de seguridad adicionales.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div style="text-align: center; padding: 3rem 0;">
+            <h2>¿Interesado en saber más?</h2>
+            <p style="color: var(--text-gray); margin-bottom: 2rem;">Este proyecto demuestra capacidades avanzadas en web scraping, procesamiento de lenguaje natural, y arquitectura de sistemas escalables.</p>
+            <a href="index.html#contact" style="display: inline-block; background: #007bff; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: 600;">Contactar</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

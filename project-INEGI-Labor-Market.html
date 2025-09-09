@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INEGI Labor Market Analysis - Alex Acosta Portfolio</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/logo.ico" alt="alex_logo" height="20%" width="20%"></a>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" class="back-btn">← Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <span class="category">Statistical Analysis & Data Visualization</span>
+            <h1 class="project-title">INEGI Labor Market Analysis</h1>
+            <p class="subtitle">Comprehensive analysis of the Mexican labor market using ENOE survey data with interactive dashboards for employment patterns and economic insights</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Project Overview</h2>
+        <p>This project analyzes the main characteristics of the Mexican labor market to identify patterns indicating potential distortions, the relationship between years of schooling and employment activities, as well as income in relation to years of preparation and work experience. Developed for INEGI (National Institute of Statistics and Geography), this interactive platform processes data from the ENOE (National Survey of Occupation and Employment) covering multiple quarters from 2019 to 2022, including pre-pandemic and pandemic scenarios.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Survey Quarters</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">5M+</span>
+                <span class="stat-label">Employment Records</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Statistical Variables</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">4</span>
+                <span class="stat-label">Skill Levels</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Challenge & Solution</h2>
+            <div class="challenge-solution">
+                <div class="card challenge">
+                    <h3>🎯 The Challenge</h3>
+                    <p>INEGI needed a comprehensive analysis system to understand the Mexican labor market's complex dynamics, particularly the relationship between education, occupation, and income across different time periods including pandemic impacts.</p>
+                    <p>Key challenges:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Processing massive ENOE survey datasets</li>
+                        <li>Analyzing education-occupation mismatches</li>
+                        <li>Tracking employment patterns across pandemic periods</li>
+                        <li>Creating accessible visualizations for policymakers</li>
+                        <li>Handling complex statistical relationships</li>
+                    </ul>
+                </div>
+                <div class="card solution">
+                    <h3>💡 The Solution</h3>
+                    <p>I developed an interactive R Shiny dashboard with advanced statistical analysis capabilities, featuring dynamic visualizations and comprehensive filtering options for labor market exploration.</p>
+                    <p>Solution components:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Multi-quarter ENOE data processing and cleaning</li>
+                        <li>Custom education level nomenclature system</li>
+                        <li>Interactive dashboard with dynamic filtering</li>
+                        <li>Advanced statistical visualizations with Plotly</li>
+                        <li>Skill level classification system integration</li>
+                        <li>Comparative analysis across time periods</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Key Features</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Data Processing</h4>
+                <p>Advanced processing of ENOE survey data with custom education level mapping and work experience calculations based on age and schooling years.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Interactive Filtering</h4>
+                <p>Dynamic filtering system allowing users to analyze data by quarters, statistics, topics, levels, and subtopics with real-time updates.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Statistical Visualization</h4>
+                <p>Comprehensive visualization suite including bar charts, line graphs, scatter plots, and trend analysis with Plotly integration.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Comparative Analysis</h4>
+                <p>Multi-period comparison capabilities showing pre-pandemic, pandemic, and recovery patterns in the Mexican labor market.</p>
+            </div>
+        </div>
+
+    <section class="project-section">
+        <h2>Dashboard Showcase</h2>
+        
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="images/OIT_1.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/OIT_1.png" alt="Main Dashboard View">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/OIT2.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/OIT2.png" alt="Word Cloud Analysis">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/OIT3.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/OIT3.png" alt="Semantic Network">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/IOT4.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/IOT4.png" alt="Sentiment Analysis">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/OIT5.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/OIT5.png" alt="Another Dashboard View">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        
+        <p style="color: var(--text-gray); font-size: 1rem; margin-top: 2rem; text-align: center;">
+           Interactive dashboard with statistical analysis, comparative visualizations, and real-time filtering capabilities
+
+        </p>
+    </section>
+    <section class="project-section">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+            <div style="width: 100%; height: 150px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666;">Education vs Occupation Analysis</div>
+            <div style="width: 100%; height: 150px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666;">Income Distribution Charts</div>
+            <div style="width: 100%; height: 150px; background: #f8f9fa; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666;">Time Series Analysis</div>
+        </div>
+       </div>
+
+</div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Technology Stack</h2>
+            <div class="tech-grid">
+                <span class="tech-tag">R Shiny</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">DT (DataTables)</span>
+                <span class="tech-tag">dplyr</span>
+                <span class="tech-tag">ggplot2</span>
+                <span class="tech-tag">readxl</span>
+                <span class="tech-tag">openxlsx</span>
+                <span class="tech-tag">zoo (Time Series)</span>
+                <span class="tech-tag">shinydashboard</span>
+                <span class="tech-tag">Statistical Analysis</span>
+                <span class="tech-tag">Data Visualization</span>
+                <span class="tech-tag">ENOE Survey Data</span>
+            </div>
+            
+            <h3>Statistical Capabilities Highlights</h3>
+            <p>The platform implements advanced statistical analysis techniques for labor market research:</p>
+            <ul style="color: var(--text-gray); margin-top: 1rem;">
+                <li><strong>Data Processing:</strong> Custom education level mapping with years of schooling calculations</li>
+                <li><strong>Work Experience Calculation:</strong> Derived variable creation based on age, education, and employment history</li>
+                <li><strong>Multi-dimensional Analysis:</strong> Cross-tabulation of education, occupation, income, and demographics</li>
+                <li><strong>Time Series Analysis:</strong> Quarterly comparisons with pandemic impact assessment</li>
+                <li><strong>Interactive Visualization:</strong> Dynamic charts with drill-down capabilities and real-time filtering</li>
+                <li><strong>Statistical Measures:</strong> Mean, median, and distribution analysis across multiple variables</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Key Variables & Analysis</h2>
+        <p>The analysis incorporates comprehensive labor market variables from ENOE survey data, providing insights into employment patterns, educational mismatches, and income distribution.</p>
+        
+        <div class="challenge-solution">
+            <div class="card">
+                <h3>📊 Primary Variables</h3>
+                <p><strong>Demographics:</strong> Age, sex, and geographic location of employed individuals.</p>
+                <p><strong>Education:</strong> Custom nomenclature mapping school years (none=0 to doctorate=23 years).</p>
+                <p><strong>Occupation:</strong> SINCO classification system with skill level integration (Levels 1-4).</p>
+                <p><strong>Employment:</strong> Position in occupation, time in last job, and employment formality status.</p>
+            </div>
+            <div class="card">
+                <h3>🔄 Derived Variables</h3>
+                <p><strong>Work Experience:</strong> Calculated from age minus education years plus 6 (school entry age).</p>
+                <p><strong>Education-Occupation Match:</strong> Analysis of educational level appropriateness for occupation type.</p>
+                <p><strong>Income Analysis:</strong> Monthly income distribution by education, experience, and position.</p>
+                <p><strong>Job Stability:</strong> Time working in last job categorized into discrete periods.</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">Skill Level Classification System</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🔧 Level 1: Basic Tasks</h4>
+                <p style="color: var(--text-gray);">Simple and routine physical or manual tasks requiring minimal formal education.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">⚙️ Level 2: Technical Operations</h4>
+                <p style="color: var(--text-gray);">Operation of electronic equipment, vehicle driving, and information handling tasks.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🎓 Level 3: Specialized Knowledge</h4>
+                <p style="color: var(--text-gray);">Complex technical tasks requiring specialized knowledge and intermediate-level instruction.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">👔 Level 4: Decision Making</h4>
+                <p style="color: var(--text-gray);">Leadership roles requiring decision-making and complex problem-solving capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Results & Impact</h2>
+            <p>The INEGI Labor Market Analysis platform has provided crucial insights into Mexican employment patterns, supporting evidence-based policy decisions and labor market research.</p>
+            
+            <div class="challenge-solution">
+                <div class="card">
+                    <h3>📈 Research Impact</h3>
+                    <p><strong>Policy Support:</strong> Comprehensive analysis supporting government labor policy decisions and ILO collaboration.</p>
+                    <p><strong>Academic Value:</strong> Detailed documentation and methodology enabling reproducible research.</p>
+                    <p><strong>Pandemic Analysis:</strong> Clear visualization of COVID-19 impact on Mexican employment patterns.</p>
+                    <p><strong>Education-Employment Gap:</strong> Identification of mismatches between educational preparation and job requirements.</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 Technical Achievements</h3>
+                    <p><strong>Data Integration:</strong> Successful processing of multi-quarter ENOE datasets with consistent methodology.</p>
+                    <p><strong>Interactive Analytics:</strong> Real-time filtering and visualization capabilities for complex statistical analysis.</p>
+                    <p><strong>Scalable Architecture:</strong> Modular R Shiny application design supporting future data additions.</p>
+                    <p><strong>User Experience:</strong> Intuitive interface enabling non-technical users to explore complex labor data.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem;">Key Analytical Insights</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🎯 Education-Occupation Analysis</h4>
+                    <p style="color: var(--text-gray);">Comprehensive mapping of educational levels against occupational divisions revealing skill mismatches.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">💰 Income Distribution</h4>
+                    <p style="color: var(--text-gray);">Detailed analysis of monthly income patterns by education, experience, and employment position.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">📊 Job Stability Metrics</h4>
+                    <p style="color: var(--text-gray);">Time-in-job analysis revealing employment rotation patterns across different sectors.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🦠 Pandemic Impact</h4>
+                    <p style="color: var(--text-gray);">Comparative analysis showing pre-pandemic, during, and recovery employment patterns.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">📈 Temporal Trends</h4>
+                    <p style="color: var(--text-gray);">Multi-quarter trend analysis enabling identification of long-term employment patterns.</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🔍 Skill Level Distribution</h4>
+                    <p style="color: var(--text-gray);">Integration of SINCO classification system with detailed skill level analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // 1. Inicializar GLightbox (para ampliar las imágenes)
+        // Este código ya lo tenías y funciona perfectamente.
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true
+        });
+
+        // 2. NUEVO: Inicializar Swiper (para el carrusel)
+        const swiper = new Swiper('.swiper', {
+            // Opciones de configuración
+            loop: true, // Para que el carrusel sea infinito
+            spaceBetween: 30, // Espacio entre imágenes
+            effect: 'fade', // Efecto de transición, puedes probar 'slide', 'cube', 'coverflow', 'flip'
+            
+            // Paginación (los puntitos)
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Botones de navegación (las flechas)
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Para que el carrusel se pueda controlar con el teclado
+            keyboard: {
+                enabled: true,
+            },
+        });
+    </script>
+
+</body>
+</html>

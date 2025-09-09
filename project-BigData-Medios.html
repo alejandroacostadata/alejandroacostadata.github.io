@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigData Medios - Alex Acosta Portfolio</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/logo.ico" alt="alex_logo" height="20%" width="20%"></a>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" class="back-btn">← Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <span class="category">Text Mining & NLP</span>
+            <img src="images/Logo BDM alt.png" alt="BDM_logo">
+            <p class="subtitle">Media analytics platform with text mining and sentiment analysis that processes thousands of news articles in real-time</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Project Overview</h2>
+        <p>BigData Medios is an innovative platform designed to collect, process, and analyze large volumes of digital media and social network data. Using advanced text mining techniques, NLP, and sentiment analysis, it provides key insights into trends and public opinion, facilitating strategic decision-making in communication and market research.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">10K+</span>
+                <span class="stat-label">News Articles/Day</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">Sentiment Accuracy</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">&lt;15s</span>
+                <span class="stat-label">Analysis Time</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Data Sources</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Challenge & Solution</h2>
+            <div class="challenge-solution">
+                <div class="card challenge">
+                    <h3>🎯 The Challenge</h3>
+                    <p>Organizations faced difficulties monitoring and analyzing the vast volume of information generated daily in digital media. Manual analysis was inefficient and didn't allow for timely identification of trends or sentiments.</p>
+                    <p>Key problems:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Information overload from multiple sources</li>
+                        <li>Lack of sentiment analysis tools for Spanish language</li>
+                        <li>Difficulty identifying emerging trends</li>
+                        <li>Slow and costly manual reporting</li>
+                    </ul>
+                </div>
+                <div class="card solution">
+                    <h3>💡 The Solution</h3>
+                    <p>I developed a comprehensive media analytics platform with natural language processing capabilities, text mining, and real-time interactive data visualization.</p>
+                    <p>Solution components:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Automated web scraping of digital media</li>
+                        <li>NLP pipeline for Spanish text analysis</li>
+                        <li>Custom sentiment analysis models</li>
+                        <li>Interactive dashboard with Shiny and dynamic visualizations</li>
+                        <li>GPT-4 integration for automatic summaries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Key Features</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Data Collection</h4>
+                <p>Automated web scraping system that collects news from 50+ digital sources in real-time and stores them in MySQL.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Text Mining</h4>
+                <p>Advanced NLP processing with word cloud generation, n-gram analysis, and bidirectional semantic networks.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Sentiment Analysis</h4>
+                <p>Custom model that classifies news as positive, negative, and neutral with 95% accuracy using Spanish lexicons.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>AI-Powered Synthesis</h4>
+                <p>GPT-4 API integration for automatic summaries and thematic analysis of large text volumes.</p>
+            </div>
+        </div>
+
+        <div class="visual-showcase">
+        <h3>Dashboard Preview</h3>
+        <div class="visual-placeholder" style="display: grid; grid-template-columns: 1fr; gap: 1rem;">
+        <img src="images/bigdata-medios-dashboard.png" alt="Main Dashboard" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+            <img src="images/bigdata-wordcloud.png" alt="Word Cloud Analysis" style="width: 100%; height: auto; border-radius: 8px;">
+            <img src="images/bigdata-network.png" alt="Semantic Network" style="width: 100%; height: auto; border-radius: 8px;">
+            <img src="images/bigdata-sentiment.png" alt="Sentiment Analysis" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+       </div>
+       <p style="color: var(--text-gray); font-size: 1rem; margin-top: 1rem;">
+        Interactive dashboard with sentiment analysis, semantic networks and AI in real-time
+       </p>
+      <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center;">
+        <a href="https://bdm-nacional-900159053031.us-central1.run.app" target="_blank" class="cta-btn" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration:          none; border-radius: 5px;">
+            View Live Demo →
+        </a>
+    </div>
+</div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Technology Stack</h2>
+            <div class="tech-grid">
+                <span class="tech-tag">R Shiny</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Text Mining (tm)</span>
+                <span class="tech-tag">OpenAI API</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Highcharter</span>
+                <span class="tech-tag">WordCloud2</span>
+                <span class="tech-tag">igraph</span>
+                <span class="tech-tag">Sentiment Analysis</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">AWS/GCP</span>
+            </div>
+            
+            <h3>Technical Capabilities Highlights</h3>
+            <p>The platform implements a complete text processing pipeline with advanced NLP techniques:</p>
+            <ul style="color: var(--text-gray); margin-top: 1rem;">
+                <li><strong>Text Processing:</strong> Tokenization, stemming, and corpus cleaning with the tm library</li>
+                <li><strong>Network Analysis:</strong> Bidirectional graph construction and term correlation analysis</li>
+                <li><strong>Machine Learning:</strong> Sentiment classification models with cross-validation</li>
+                <li><strong>Interactive Visualization:</strong> Dynamic dashboards with Plotly, Highcharter, and WordCloud2</li>
+                <li><strong>AI Integration:</strong> OpenAI API for summary generation and thematic analysis</li>
+                <li><strong>Scalable Architecture:</strong> Modular design with authentication, session management, and subscriptions</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Results & Impact</h2>
+        <p>BigData Medios has transformed how organizations monitor and analyze their media presence, providing actionable insights in real-time.</p>
+        
+        <div class="challenge-solution">
+            <div class="card">
+                <h3>📈 Performance Metrics</h3>
+                <p><strong>Processing:</strong> Analysis capacity of 10,000+ daily news articles with latency under 15 seconds.</p>
+                <p><strong>Accuracy:</strong> 95% accuracy in sentiment classification validated with labeled test set.</p>
+                <p><strong>Coverage:</strong> Integration with 50+ national and regional digital media sources.</p>
+                <p><strong>Automation:</strong> 85% reduction in media analysis report generation time.</p>
+            </div>
+            <div class="card">
+                <h3>🎯 Business Impact</h3>
+                <p><strong>Governments:</strong> Effective monitoring of citizen perception and communication crisis management.</p>
+                <p><strong>Corporations:</strong> Competitive analysis and communication strategy optimization.</p>
+                <p><strong>Agencies:</strong> Campaign impact measurement and communication ROI.</p>
+                <p><strong>Active Users:</strong> 100+ organizations using the platform daily.</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">Implemented Key Features</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🔍 Advanced Search</h4>
+                <p style="color: var(--text-gray);">Multiple filters by date, media, section, and author with full-text search.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">☁️ Word Clouds</h4>
+                <p style="color: var(--text-gray);">Unigram and bigram analysis with interactive and exportable visualization.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🕸️ Semantic Networks</h4>
+                <p style="color: var(--text-gray);">Correlation graphs and relationship analysis between key terms.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">💭 Sentiment Analysis</h4>
+                <p style="color: var(--text-gray);">Automatic classification with temporal and source visualization.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🤖 AI Summaries</h4>
+                <p style="color: var(--text-gray);">Automatic synthesis of large text volumes with GPT-4.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">📄 Automated Reports</h4>
+                <p style="color: var(--text-gray);">PDF and HTML report generation with included graphics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-cta">
+        <h2>Interested in Text Analysis and NLP?</h2>
+        <p>Discover how I can help you transform large volumes of text into actionable insights using advanced data science techniques.</p>
+        <div class="cta-buttons">
+            <a href="index.html#contact" class="cta-btn">Start Your Project</a>
+            <a href="index.html#portfolio" class="cta-btn secondary">View More Projects</a>
+        </div>
+    </section>
+
+</body>
+</html>

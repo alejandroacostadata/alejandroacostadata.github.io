@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Sentiment & Topic Analysis - Alex Acosta Portfolio</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+           <a href="index.html" class="nav-logo"><img src="images/logo.ico" alt="alex_logo" height="20%" width="20%"></a>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#portfolio" class="back-btn">← Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <span class="category">NLP & Machine Learning</span>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin: 20px 0;">
+                <div style="padding: 10px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 25px; color: white; font-weight: bold;">🤗 Transformers</div>
+                <div style="padding: 10px 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 25px; color: white; font-weight: bold;">🧠 Fine-tuning</div>
+                <div style="padding: 10px 20px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 25px; color: white; font-weight: bold;">📰 News AI</div>
+            </div>
+            <p class="subtitle">Sistema de análisis de noticias combina modelos de transformers para clasificación de sentimiento y temas utilizando técnicas de fine-tuning y modelos preentrenados de Hugging Face</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Project Overview</h2>
+        <p>Un sistema avanzado de análisis de noticias que implementa múltiples modelos de transformers para clasificación híbrida de sentimiento y categorización automática de temas. El proyecto combina técnicas de fine-tuning personalizado con modelos preentrenados de última generación, ofreciendo análisis profundo y visualizaciones interactivas del contenido periodístico.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">88.5%</span>
+                <span class="stat-label">Best Accuracy</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">4</span>
+                <span class="stat-label">ML Models</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">17</span>
+                <span class="stat-label">Topic Categories</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">1.5/s</span>
+                <span class="stat-label">Processing Speed </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Challenge & Solution</h2>
+            <div class="challenge-solution">
+                <div class="card challenge">
+                    <h3>🎯 The Challenge</h3>
+                    <p>El análisis automatizado de noticias en español presenta desafíos únicos debido a la complejidad lingüística y la falta de modelos especializados.</p>
+                    <p>Key problems:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Modelos genéricos con baja precisión en español</li>
+                        <li>Falta de taxonomías estandarizadas para temas</li>
+                        <li>Sesgos en modelos preentrenados</li>
+                        <li>Procesamiento lento de grandes volúmenes</li>
+                        <li>Necesidad de análisis multi-dimensional</li>
+                    </ul>
+                </div>
+                <div class="card solution">
+                    <h3>💡 The Solution</h3>
+                    <p>Desarrollé un sistema híbrido que combina múltiples modelos especializados con fine-tuning personalizado para maximizar la precisión.</p>
+                    <p>Solution components:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Pipeline híbrido multi-modelo</li>
+                        <li>Fine-tuning con datos mexicanos</li>
+                        <li>Taxonomía IPTC para clasificación de temas</li>
+                        <li>Procesamiento por lotes optimizado</li>
+                        <li>Visualizaciones interactivas con métricas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Key Features</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Multi-Model Pipeline</h4>
+                <p>Sistema híbrido que combina SaBERT, modernBERT y BETO fine-tuned para análisis robusto de sentimiento.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>IPTC Topic Classification</h4>
+                <p>Clasificación automática en 17 categorías usando taxonomía internacional IPTC Media Topic NewsCodes.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Custom Fine-tuning</h4>
+                <p>Modelo BETO personalizado con datos mexicanos alcanzando 88.5% de accuracy en sentimiento.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Advanced Analytics</h4>
+                <p>Métricas de confianza, análisis comparativo entre modelos y visualizaciones interactivas.</p>
+            </div>
+        </div>
+
+        <div class="visual-showcase">
+            <h3>Model Performance Comparison</h3>
+            
+            <!-- Tabla de modelos de sentimiento -->
+            <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; margin: 2rem 0;">
+                <h4 style="color: #333; margin-bottom: 1.5rem;">🎭 Modelos de Análisis de Sentimiento</h4>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        <thead style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                            <tr>
+                                <th style="padding: 15px; text-align: left;">Modelo</th>
+                                <th style="padding: 15px; text-align: left;">Descripción</th>
+                                <th style="padding: 15px; text-align: center;">Idioma</th>
+                                <th style="padding: 15px; text-align: center;">Accuracy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 15px; font-weight: bold;">SaBERT-Spanish</td>
+                                <td style="padding: 15px;">Especializado en español</td>
+                                <td style="padding: 15px; text-align: center;">🇪🇸 ES</td>
+                                <td style="padding: 15px; text-align: center; color: #28a745; font-weight: bold;">86.47%</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee; background: #f8f9fa;">
+                                <td style="padding: 15px; font-weight: bold;">modernBERT-multilingual</td>
+                                <td style="padding: 15px;">Modelo multilingüe</td>
+                                <td style="padding: 15px; text-align: center;">🌍 Multi</td>
+                                <td style="padding: 15px; text-align: center; color: #28a745; font-weight: bold;">85.23%</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 15px; font-weight: bold; color: #007bff;">BETO Fine-tuned</td>
+                                <td style="padding: 15px;">AlBERTex español personalizado</td>
+                                <td style="padding: 15px; text-align: center;">🇲🇽 ES (MX)</td>
+                                <td style="padding: 15px; text-align: center; color: #dc3545; font-weight: bold; font-size: 1.1em;">88.5% ⭐</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tabla de modelos de temas -->
+            <div style="background: #f8f9fa; padding: 2rem; border-radius: 12px; margin: 2rem 0;">
+                <h4 style="color: #333; margin-bottom: 1.5rem;">📚 Modelo de Clasificación de Temas</h4>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                        <thead style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                            <tr>
+                                <th style="padding: 15px; text-align: left;">Modelo</th>
+                                <th style="padding: 15px; text-align: left;">Descripción</th>
+                                <th style="padding: 15px; text-align: center;">Categorías</th>
+                                <th style="padding: 15px; text-align: center;">F1-Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 15px; font-weight: bold;">IPTC Multilingual</td>
+                                <td style="padding: 15px;">XLM-RoBERTa + IPTC Taxonomy</td>
+                                <td style="padding: 15px; text-align: center; color: #007bff; font-weight: bold;">17 temas</td>
+                                <td style="padding: 15px; text-align: center; color: #28a745; font-weight: bold;">0.734</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://colab.research.google.com/drive/16bcDjVzqcVBlOgGSNcSimIJvqpZ9p27q#scrollTo=73Q--e91tb93" target="_blank" class="cta-btn secondary" style="display: inline-block; padding: 10px 20px; background-color: transparent; color: #667eea; text-decoration: none; border-radius: 5px; border: 2px solid #667eea;">
+                    📓 Fine-tuning Notebook →
+                </a>
+                <a href="https://colab.research.google.com/drive/1jfhJKKbY7lnCT2Q57v8su-6EbOTlb3nZ#scrollTo=gHYkYnPtTbfZ" target="_blank" class="cta-btn secondary" style="display: inline-block; padding: 10px 20px; background-color: transparent; color: #f5576c; text-decoration: none; border-radius: 5px; border: 2px solid #f5576c;">
+                    🔬 Full Analysis Notebook →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Technology Stack</h2>
+            <div class="tech-grid">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Transformers</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Hugging Face</span>
+                <span class="tech-tag">BERT</span>
+                <span class="tech-tag">XLM-RoBERTa</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Matplotlib</span>
+                <span class="tech-tag">Seaborn</span>
+                <span class="tech-tag">NLTK</span>
+                <span class="tech-tag">SpaCy</span>
+                <span class="tech-tag">Fine-tuning</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Deep Learning</span>
+            </div>
+            
+            <h3>Technical Implementation Highlights</h3>
+            <p>El proyecto implementa técnicas avanzadas de procesamiento de lenguaje natural y fine-tuning:</p>
+            <ul style="color: var(--text-gray); margin-top: 1rem;">
+                <li><strong>Multi-Model Architecture:</strong> Pipeline híbrido que combina múltiples transformers especializados</li>
+                <li><strong>Custom Fine-tuning:</strong> BETO personalizado con datos mexicanos usando técnicas de transfer learning</li>
+                <li><strong>IPTC Taxonomy:</strong> Implementación de estándar internacional para clasificación de noticias</li>
+                <li><strong>Batch Processing:</strong> Procesamiento optimizado por lotes para análisis de alto volumen</li>
+                <li><strong>Confidence Scoring:</strong> Métricas de confianza y análisis de incertidumbre por modelo</li>
+                <li><strong>Ensemble Methods:</strong> Combinación inteligente de predicciones para máxima precisión</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Results & Impact</h2>
+        <p>El sistema de análisis de noticias ha demostrado alta precisión y versatilidad, estableciendo nuevos estándares para el procesamiento de texto en español mexicano.</p>
+        
+        <div class="challenge-solution">
+            <div class="card">
+                <h3>📈 Performance Metrics</h3>
+                <p><strong>Sentiment Analysis:</strong> 88.5% accuracy con modelo BETO fine-tuned.</p>
+                <p><strong>Topic Classification:</strong> 0.734 F1-Score en taxonomía IPTC con 17 categorías.</p>
+                <p><strong>Processing Speed:</strong> 1.5 noticias por segundo en procesamiento por lotes.</p>
+                <p><strong>Model Comparison:</strong> Análisis comparativo detallado entre 4 modelos especializados.</p>
+            </div>
+            <div class="card">
+                <h3>🎯 Technical Achievements</h3>
+                <p><strong>Custom Fine-tuning:</strong> Modelo BETO adaptado específicamente para español mexicano.</p>
+                <p><strong>Hybrid Pipeline:</strong> Sistema multi-modelo que maximiza fortalezas individuales.</p>
+                <p><strong>International Standards:</strong> Implementación completa de taxonomía IPTC Media Topic.</p>
+                <p><strong>Reproducible Research:</strong> Notebooks públicos con metodología completa documentada.</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">System Components</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🎭 Sentiment Analysis</h4>
+                <p style="color: var(--text-gray);">Pipeline híbrido con SaBERT, modernBERT y BETO fine-tuned.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">📚 Topic Classification</h4>
+                <p style="color: var(--text-gray);">XLM-RoBERTa con taxonomía IPTC para 17 categorías temáticas.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🔬 Model Evaluation</h4>
+                <p style="color: var(--text-gray);">Métricas detalladas de precisión, recall y F1-score por modelo.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">📊 Visualizations</h4>
+                <p style="color: var(--text-gray);">Dashboards interactivos con Plotly y análisis comparativo.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">⚡ Batch Processing</h4>
+                <p style="color: var(--text-gray);">Procesamiento optimizado para análisis de alto volumen.</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🎯 Confidence Metrics</h4>
+                <p style="color: var(--text-gray);">Análisis de incertidumbre y métricas de confianza por predicción.</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">IPTC Topic Categories</h3>
+        <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 2rem; border-radius: 12px; margin-top: 2rem;">
+            <h4 style="color: #667eea; margin-bottom: 1.5rem;">📰 Categorías de Clasificación Automática</h4>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">📈 Economy & Business</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🏛️ Politics</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">⚽ Sports</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🎭 Arts & Culture</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🔬 Science & Technology</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🏥 Health</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🌍 Environment</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">⚖️ Crime & Law</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🎓 Education</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🚗 Lifestyle</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🌦️ Weather</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">⚡ Disasters</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🌐 International</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">👥 Social Issues</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🎪 Entertainment</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">📺 Media</div>
+                <div style="background: rgba(255,255,255,0.1); padding: 10px; border-radius: 8px; color: #e0e0e0;">🔄 Other</div>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">Research Contributions</h3>
+        <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; border-radius: 12px; margin-top: 2rem;">
+            <h4 style="color: #fff; margin-bottom: 1.5rem;">🎯 Key Findings & Innovations</h4>
+            <ul style="color: #e0e0e0; line-height: 1.8;">
+                <li>🏆 <strong>BETO Fine-tuned</strong> achieved 88.5% accuracy, outperforming general Spanish models</li>
+                <li>🔬 <strong>Hybrid Pipeline</strong> combines strengths of multiple specialized transformers</li>
+                <li>🇲🇽 <strong>Mexican Spanish Adaptation</strong> demonstrates the importance of localized fine-tuning</li>
+                <li>📊 <strong>IPTC Implementation</strong> provides standardized topic classification for Spanish news</li>
+                <li>⚡ <strong>Optimized Processing</strong> achieves 1.5 news articles per second with high accuracy</li>
+                <li>📈 <strong>Comprehensive Evaluation</strong> includes confidence metrics and model comparison analysis</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Inicializar GLightbox
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true
+        });
+
+        // Inicializar Swiper si se necesita
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            spaceBetween: 30,
+            effect: 'fade',
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            keyboard: {
+                enabled: true,
+            },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INEGI Deep Learning Coding Project - Alex Acosta Portfolio</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+             <a href="index.html" class="nav-logo"><img src="images/logo.ico" alt="alex_logo" height="20%" width="20%"></a>
+            <ul>
+                <li><a href="index.html#hero">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html" class="back-btn">← Back to Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <span class="category">Deep Learning & Statistical Coding</span>
+            <h1>Deep Learning for Survey Coding Automation</h1>
+            <p class="subtitle">Methodological proposal to automate ENIGH survey coding using Deep Learning algorithms for Occupation and Economic Activity variables, achieving 50% reduction in manual coding while maintaining quality standards</p>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Project Overview</h2>
+        <p>This groundbreaking project for INEGI (National Institute of Statistics and Geography) introduces an AI-powered intermediate stage in the coding production process for the National Household Income and Expenditure Survey (ENIGH). By implementing a Deep Learning architecture with confidence-based record selection, we achieved significant automation while maintaining the statistical quality required for official government surveys.</p>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-number">50%</span>
+                <span class="stat-label">Manual Coding Reduction</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">83%+</span>
+                <span class="stat-label">Quality Maintained</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">5</span>
+                <span class="stat-label">ENIGH Surveys Analyzed</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">2</span>
+                <span class="stat-label">Production Lines Tested</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Challenge & Solution</h2>
+            <div class="challenge-solution">
+                <div class="card challenge">
+                    <h3>🎯 The Challenge</h3>
+                    <p>INEGI faced a significant bottleneck in their survey coding process where 15-30% of records for occupation and economic activity variables required manual coding by trained experts, creating resource constraints and processing delays.</p>
+                    <p>Key challenges:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>High volume of records requiring manual expert coding</li>
+                        <li>Need to maintain statistical quality standards for government surveys</li>
+                        <li>Integration with existing production processes</li>
+                        <li>Handling text variations, spelling errors, and synonyms</li>
+                        <li>Balancing automation efficiency with accuracy requirements</li>
+                    </ul>
+                </div>
+                <div class="card solution">
+                    <h3>💡 The Solution</h3>
+                    <p>I developed a sophisticated Deep Learning pipeline with FastText embeddings, bidirectional GRUs, and a confidence-based filtering system that selectively automates coding for records where the model shows high certainty.</p>
+                    <p>Solution components:</p>
+                    <ul style="color: var(--text-gray); margin-top: 1rem;">
+                        <li>Deep Learning architecture with FastText word embeddings</li>
+                        <li>Bidirectional GRU for text sequence processing</li>
+                        <li>Confidence metric for selective record filtering</li>
+                        <li>A/B testing framework with dual production lines</li>
+                        <li>Integration of auxiliary categorical variables</li>
+                        <li>Interactive R Shiny dashboard for results visualization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Deep Learning Architecture</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>FastText Word Embeddings</h4>
+                <p>Dense vector representations trained on SINCO/NAICS catalogs and Spanish Wikipedia, handling subword information for spelling variations and out-of-vocabulary terms.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>Bidirectional GRU Processing</h4>
+                <p>Sequential processing of text embeddings using bidirectional Gated Recurrent Units to capture contextual information from both directions.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Metadata Integration</h4>
+                <p>Incorporation of auxiliary categorical variables (company size, academic level, work location) through fully connected layers.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h4>Confidence-Based Selection</h4>
+                <p>Softmax confidence scores used to filter records for automated coding, ensuring quality thresholds are maintained.</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">Model Performance Comparison</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">📊 Occupation (SINCO)</h4>
+                <p style="color: var(--text-gray);">Accuracy: <strong>61.97%</strong></p>
+                <p style="color: var(--text-gray);">Precision: <strong>47.79%</strong></p>
+                <p style="color: var(--text-gray);">F1-Score: <strong>45.13%</strong></p>
+                <p style="color: var(--text-gray);">Significant improvement over TF-iDF baseline</p>
+            </div>
+            <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                <h4 style="color: #333; margin-bottom: 0.5rem;">🏭 Economic Activity (NAICS)</h4>
+                <p style="color: var(--text-gray);">Accuracy: <strong>68.25%</strong></p>
+                <p style="color: var(--text-gray);">Precision: <strong>51.46%</strong></p>
+                <p style="color: var(--text-gray);">F1-Score: <strong>49.39%</strong></p>
+                <p style="color: var(--text-gray);">Enhanced performance with auxiliary variables</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Interactive Dashboard</h2>
+        
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="images/inegi-deep-learning1.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/inegi-deep-learning1.png" alt="Main Dashboard Overview" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/inegi-deep-learning2.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/inegi-deep-learning2.png" alt="Quality Analysis Treemap" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/inegi-deep-learning3.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/inegi-deep-learning4.png" alt="Threshold Analysis" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/inegi-deep-learning4.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/inegi-deep-learning4.png" alt="Alluvial Flow Analysis" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="images/minegi-deep-learning5.png" class="glightbox" data-gallery="dashboard">
+                        <img src="images/inegi-deep-learning5.png" alt="Chord Diagram Visualization" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        
+        <p style="color: var(--text-gray); font-size: 1rem; margin-top: 2rem; text-align: center;">
+            Interactive R Shiny dashboard featuring quality analysis, threshold optimization, and model performance visualization across multiple ENIGH surveys
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;">
+            <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Quality Treemaps by Category</div>
+            <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Threshold vs Savings Analysis</div>
+            <div style="width: 100%; height: 150px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">Model Performance Tracking</div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Technology Stack</h2>
+            <div class="tech-grid">
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">FastText</span>
+                <span class="tech-tag">Bidirectional GRU</span>
+                <span class="tech-tag">TensorFlow/Keras</span>
+                <span class="tech-tag">R Shiny</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Treemap</span>
+                <span class="tech-tag">ggalluvial</span>
+                <span class="tech-tag">circlize</span>
+                <span class="tech-tag">DT DataTables</span>
+                <span class="tech-tag">Natural Language Processing</span>
+                <span class="tech-tag">Statistical Analysis</span>
+            </div>
+            
+            <h3>Deep Learning Pipeline Highlights</h3>
+            <p>The implementation features cutting-edge NLP and deep learning techniques specifically adapted for statistical survey coding:</p>
+            <ul style="color: var(--text-gray); margin-top: 1rem;">
+                <li><strong>FastText Embeddings:</strong> Dense 300-dimensional vectors capturing semantic similarity and handling spelling variations through subword information</li>
+                <li><strong>Bidirectional GRU:</strong> Sequential processing capturing context from both directions for improved text understanding</li>
+                <li><strong>Multi-source Training:</strong> Training corpus includes SINCO/NAICS catalogs and Spanish Wikipedia for comprehensive vocabulary coverage</li>
+                <li><strong>Confidence Scoring:</strong> Softmax probability used as certainty metric for selective automation with quality guarantees</li>
+                <li><strong>A/B Testing Framework:</strong> Dual production lines enabling robust evaluation and quality comparison</li>
+                <li><strong>Threshold Optimization:</strong> Both general and category-specific threshold strategies evaluated for optimal performance</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Methodology & Validation</h2>
+        <p>The project employed rigorous methodological standards for statistical survey applications, including comprehensive validation and A/B testing frameworks.</p>
+        
+        <div class="challenge-solution">
+            <div class="card">
+                <h3>🔬 Training Strategy</h3>
+                <p><strong>Model M1:</strong> ENIGH 2020 for training, 2016-2018 for threshold calculation</p>
+                <p><strong>Model M2:</strong> Combined 80% of ENIGH 2016-2020 for training, 20% for thresholds</p>
+                <p><strong>Evaluation:</strong> ENIGH 2022 and Seasonal 2022 as unseen test sets</p>
+                <p><strong>Expert Validation:</strong> 7,011 occupation and 5,426 activity records manually coded by INEGI experts for quality assessment</p>
+            </div>
+            <div class="card">
+                <h3>📊 Threshold Selection</h3>
+                <p><strong>Individual Thresholds:</strong> Category-specific confidence cutoffs optimized for each occupation/activity code</p>
+                <p><strong>General Threshold:</strong> Single confidence threshold applied uniformly across all categories</p>
+                <p><strong>Quality Target:</strong> Maintain 83-89% coding quality comparable to manual processes</p>
+                <p><strong>Trade-off Analysis:</strong> Systematic evaluation of savings vs. quality relationship</p>
+            </div>
+        </div>
+
+        <h3 style="margin-top: 3rem;">Production Integration Results</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div style="padding: 1.5rem; background: #f0f9f4; border-radius: 8px; border-left: 4px solid #10b981;">
+                <h4 style="color: #047857; margin-bottom: 0.5rem;">💼 Occupation Coding</h4>
+                <p style="color: var(--text-gray);">50% automation with 84% quality</p>
+                <p style="color: var(--text-gray);">Threshold: 0.868180</p>
+                <p style="color: var(--text-gray);">Comparable to manual coding standards</p>
+            </div>
+            <div style="padding: 1.5rem; background: #eff6ff; border-radius: 8px; border-left: 4px solid #3b82f6;">
+                <h4 style="color: #1d4ed8; margin-bottom: 0.5rem;">🏭 Economic Activity</h4>
+                <p style="color: var(--text-gray);">50% automation with 89% quality</p>
+                <p style="color: var(--text-gray);">Threshold: 0.932358</p>
+                <p style="color: var(--text-gray);">Exceeds manual coding benchmarks</p>
+            </div>
+            <div style="padding: 1.5rem; background: #fef3f2; border-radius: 8px; border-left: 4px solid #ef4444;">
+                <h4 style="color: #dc2626; margin-bottom: 0.5rem;">⚡ Processing Efficiency</h4>
+                <p style="color: var(--text-gray);">From 15-30% manual coding reduced to 7.5-15%</p>
+                <p style="color: var(--text-gray);">Significant resource savings achieved</p>
+            </div>
+            <div style="padding: 1.5rem; background: #fefce8; border-radius: 8px; border-left: 4px solid #eab308;">
+                <h4 style="color: #a16207; margin-bottom: 0.5rem;">🎯 Quality Assurance</h4>
+                <p style="color: var(--text-gray);">Expert validation on 12,437 records</p>
+                <p style="color: var(--text-gray);">Maintains statistical survey standards</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section alt">
+        <div class="content">
+            <h2>Results & Impact</h2>
+            <p>The Deep Learning coding system successfully demonstrates the feasibility of AI-powered automation in official statistical processes, providing a scalable solution for national statistical offices worldwide.</p>
+            
+            <div class="challenge-solution">
+                <div class="card">
+                    <h3>📈 Operational Impact</h3>
+                    <p><strong>Efficiency Gains:</strong> 50% reduction in manual coding workload while maintaining quality standards equivalent to expert human coders.</p>
+                    <p><strong>Resource Optimization:</strong> Significant cost savings in expert coder time, enabling reallocation to higher-value analytical tasks.</p>
+                    <p><strong>Scalability:</strong> Methodology proven robust across multiple survey cycles (ENIGH 2016-2022) with consistent performance.</p>
+                    <p><strong>Integration Success:</strong> Seamless incorporation into existing production workflows without disrupting established processes.</p>
+                </div>
+                <div class="card">
+                    <h3>🔬 Technical Achievements</h3>
+                    <p><strong>NLP Innovation:</strong> Novel application of FastText embeddings for statistical survey coding with subword handling for robustness.</p>
+                    <p><strong>Confidence Calibration:</strong> Sophisticated threshold selection methodology ensuring quality control in production environments.</p>
+                    <p><strong>Validation Framework:</strong> Comprehensive A/B testing approach enabling reliable performance assessment.</p>
+                    <p><strong>Interactive Analytics:</strong> Rich visualization dashboard supporting model interpretability and operational monitoring.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem;">Key Performance Metrics</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🎯 Model Accuracy</h4>
+                    <p style="color: var(--text-gray);">Occupation: 61.97% accuracy with 45.13% F1-score improvement over baseline</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🏭 Economic Activity</h4>
+                    <p style="color: var(--text-gray);">68.25% accuracy with robust performance across diverse industry sectors</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">⚡ Production Efficiency</h4>
+                    <p style="color: var(--text-gray);">50% automation rate with quality maintained at 83-89% expert-level standards</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🔧 Robustness</h4>
+                    <p style="color: var(--text-gray);">Consistent performance across multiple survey cycles and diverse text inputs</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">📊 Statistical Validity</h4>
+                    <p style="color: var(--text-gray);">Rigorous validation against expert-coded records ensuring survey data integrity</p>
+                </div>
+                <div style="padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                    <h4 style="color: #333; margin-bottom: 0.5rem;">🌐 Scalability</h4>
+                    <p style="color: var(--text-gray);">Modular architecture supporting extension to additional variables and surveys</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <h2>Innovation & Future Applications</h2>
+        <p>This project represents a pioneering application of Deep Learning in official statistics, establishing methodological foundations for AI adoption in national statistical offices globally.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+            <div style="padding: 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white;">
+                <h3 style="color: white; margin-bottom: 1rem;">🚀 Methodological Innovation</h3>
+                <p style="color: white; margin-bottom: 1rem;">First comprehensive application of confidence-based selective automation in official survey coding, establishing new standards for AI integration in statistical production.</p>
+            </div>
+            <div style="padding: 2rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 12px; color: white;">
+                <h3 style="color: white; margin-bottom: 1rem;">🌍 Global Impact Potential</h3>
+                <p style="color: white; margin-bottom: 1rem;">Methodology transferable to other national statistical offices worldwide, contributing to international standardization of AI-powered survey processing.</p>
+            </div>
+            <div style="padding: 2rem; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 12px; color: white;">
+                <h3 style="color: white; margin-bottom: 1rem;">📈 Future Scalability</h3>
+                <p style="color: white; margin-bottom: 1rem;">Framework extensible to additional survey variables and statistical applications, supporting broader automation initiatives in government data collection.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // Inicializar GLightbox
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true
+        });
+
+        // Inicializar Swiper
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            spaceBetween: 30,
+            effect: 'slide',
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            keyboard: {
+                enabled: true,
+            },
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+</html>
